@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores lógicos && (y) en las estructuras condicionales.</title>
+</head>
+<body>
+    <script>
+        let promedio = prompt('ingrese su promedio de notas');
+        promedio = parseFloat(promedio);
+        let asistencia = prompt('ingrese su porcentaje de asistencia');
+        asistencia = parseFloat(asistencia);
+
+        if(promedio >=4.2 && asistencia >= 90){
+            document.write('usted es apto para la beca ');
+        }
+        else{
+            document.write('usted no es apto para la beca');
+        }
+    </script>
+</body>
+</html>

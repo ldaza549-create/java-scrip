@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructuras condicionales anidadas.</title>
+</head>
+<body>
+    <script>
+        let nota = prompt('ingrese su nota');
+        let nota2 = prompt('ingrese otra nota');
+        let nota3 = prompt('ingrese otra nota');
+        
+        nota = parseFloat(nota);
+        nota2 = parseFloat(nota2);
+        nota3 = parseFloat(nota3);
+
+        let pro= (nota + nota2 + nota3) / 3;
+
+        if(pro >= 4.5 && pro <= 5.0) {
+            document.write('usted optuvo superior' + ' su promedio es: ' + pro);
+        }
+        else{
+            if (pro >= 4 && pro <= 4.5) {
+                document.write('usted optuvo alto' + ' su promedio es: ' + pro);
+            }
+            else{
+                if (pro >= 3.5 && pro <= 4) {
+                    document.write('usted optuvo basico' + ' su promedio es: ' + pro);
+                }
+                else{
+                    if (pro < 3.5) {
+                        document.write('usted optuvo bajo' + ' su promedio es: ' + pro);
+                    }
+                }
+            }
+        }
+
+
+    </script>
+</body>
+</html>
